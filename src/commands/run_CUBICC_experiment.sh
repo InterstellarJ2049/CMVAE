@@ -2,7 +2,7 @@
 
 OUTPUTDIR='../outputs'
 EXPERIMENT="CUBICC_1_test"
-DATADIR='/data/backed_up/shared/Data/CUB/CUBICC/CUBICC'  # ../data
+DATADIR='/data/backed_up/shared/Data/CUB/CUBICC'  # ../data
 EPOCHS=300
 SEED=2
 SHARED_LAT_DIM=64

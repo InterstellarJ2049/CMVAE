@@ -14,4 +14,5 @@ gpuid=1
 CUDA_VISIBLE_DEVICES=${gpuid} python train_CMVAE_CUBICC.py --experiment $EXPERIMENT --obj "dreg" --K 10 --batch-size 32 --epochs $EPOCHS \
       --latent-dim-c 35 --latent-dim-z $SHARED_LAT_DIM --latent-dim-w $MS_LAT_DIM --seed $SEED --beta 1.0 \
       --datadir $DATADIR  --outputdir $OUTPUTDIR \
+      --inception_path "${DATADIR}/pt_inception-2015-12-05-6726825d.pth" \
       --priorposterior 'Normal'

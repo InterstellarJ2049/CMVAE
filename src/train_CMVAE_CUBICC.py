@@ -88,7 +88,7 @@ print('RunID:', runId)
 NUM_VAES = len(model.vaes)
 
 # Creat path where to temporarily save images to compute FID scores
-fid_path = os.path.join(args.datadir, 'fids_CUBICC_' + (runPath.rsplit('/')[-1]))
+fid_path = os.path.join(args.datadir, 'FIDs/fids_CUBICC_' + (runPath.rsplit('/')[-1]))
 datadirCUBICC = os.path.join(args.datadir, "CUBICC")
 
 # save args to run
@@ -246,7 +246,7 @@ if __name__ == '__main__':
     with Timer('MM-VAE') as t:
         for epoch in range(1, args.epochs + 1):
             train(epoch)
-            if epoch % 25 == 0:
+            if epoch % 1 == 0:  # new_release/original 25
                 test(epoch)
                 gen_samples = model.generate_unconditional(N=100, indexes_to_prune=None, indexes_to_select=None,
                                                            coherence_calculation=False, fid_calculation=False,

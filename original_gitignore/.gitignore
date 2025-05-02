@@ -1,40 +1,7 @@
-# virtual environment
-vcca_env/ 
-/venv
-
-# data files
-data/
-/data/
-/dataset/
-mnist_data/
-
-/wandb/
-wandb/
-
-# outputs
-/outputs/
-outputs/
-
-# case by case
-ddpm/denoising_diffusion_pytorch/__pycache__/attend.cpython-311.pyc
-ddpm/denoising_diffusion_pytorch/__pycache__/denoising_diffusion_pytorch.cpython-311.pyc
-ddpm/denoising_diffusion_pytorch/__pycache__/version.cpython-311.pyc
-ddpm/denoising_diffusion_pytorch/__pycache__/
-
-# Ignore TensorFlow checkpoint files
-checkpoint
-ckpt-*.data-00000-of-00001
-ckpt-*.index
-
-# Ignore classification results
-dcca_mnist_classify.mat
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-
 
 # C extensions
 *.so
@@ -139,10 +106,8 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+#   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
-.pdm-python
-.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -193,9 +158,3 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-
-# Jan07
-exp_vcca/
-# exp_vcca/noisy_mnist_epoch10_bs128_dropout=0.0_dim-shared=30_dim-priviate0=10_dim-private1=10_recon-mode=all_mmvae-plus-recon-style=1_weights_latent=1.0_recon=1.0_indep=0.0_aug=0.0_mvib=0.0/summary/events.out.tfevents.1736255734.weiran1-group.cs.uiowa.edu.919795.0
-exp_vcca/noisy_mnist_epoch10_bs128_dropout=0.0_dim-shared=30_dim-priviate0=10_dim-private1=10_recon-mode=all_mmvae-plus-recon-style=1_weights_latent=1.0_recon=1.0_indep=0.0_aug=0.0_mvib=0.0/log.txt
-mmvaeplus/src/temp_pdb_TODO.py

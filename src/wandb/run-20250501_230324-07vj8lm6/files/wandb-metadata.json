@@ -1,0 +1,90 @@
+{
+  "os": "Linux-6.8.0-58-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.2",
+  "startedAt": "2025-05-02T04:03:24.262980Z",
+  "args": [
+    "--experiment",
+    "CUBICC_1_test",
+    "--obj",
+    "dreg",
+    "--K",
+    "10",
+    "--batch-size",
+    "32",
+    "--epochs",
+    "300",
+    "--latent-dim-c",
+    "35",
+    "--latent-dim-z",
+    "64",
+    "--latent-dim-w",
+    "32",
+    "--seed",
+    "2",
+    "--beta",
+    "1.0",
+    "--datadir",
+    "/data/backed_up/shared/Data/CUB/CUBICC",
+    "--outputdir",
+    "../outputs",
+    "--inception_path",
+    "/data/backed_up/shared/Data/CUB/CUBICC/pt_inception-2015-12-05-6726825d.pth",
+    "--priorposterior",
+    "Normal"
+  ],
+  "program": "/data/backed_up/yijie/Google01/Baselines/CMVAE/src/train_CMVAE_CUBICC.py",
+  "codePath": "src/train_CMVAE_CUBICC.py",
+  "git": {
+    "remote": "https://github.com/InterstellarJ2049/CMVAE.git",
+    "commit": "8c0b19217a1d52db7caf572ea82b6a805ea3e49c"
+  },
+  "email": "ejayzhang@gmail.com",
+  "root": "/data/backed_up/yijie/Google01/Baselines/CMVAE/src",
+  "host": "weiran1-group.cs.uiowa.edu",
+  "executable": "/home/yijie/Software_Installed/miniconda3/bin/python",
+  "codePathLocal": "train_CMVAE_CUBICC.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA H100 NVL",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "83955703808",
+      "used": "54431899648"
+    }
+  },
+  "memory": {
+    "total": "540686344192"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA H100 NVL",
+      "memoryTotal": "100485038080",
+      "cudaCores": 16896,
+      "architecture": "Hopper"
+    },
+    {
+      "name": "NVIDIA H100 NVL",
+      "memoryTotal": "100485038080",
+      "cudaCores": 16896,
+      "architecture": "Hopper"
+    },
+    {
+      "name": "NVIDIA H100 NVL",
+      "memoryTotal": "100485038080",
+      "cudaCores": 16896,
+      "architecture": "Hopper"
+    },
+    {
+      "name": "NVIDIA H100 NVL",
+      "memoryTotal": "100485038080",
+      "cudaCores": 16896,
+      "architecture": "Hopper"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
